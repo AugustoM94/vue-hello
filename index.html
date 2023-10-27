@@ -8,10 +8,16 @@
     <title>Vue Hello</title>
 </head>
 <body>
-    <div id="app">
-       <h1 :class="miaClasse" >{{ title }}</h1>
+    <div id="app" class="container text-center">
+       <h1  :class="miaClasse" >{{ message }}</h1>
        <button @click="cambiaMsg">Premi</button> 
+       <img v-bind:src="img" alt="">
     </div>
+
+
+
+
+
     <script src="https://unpkg.com/vue@3"></script>
     <script src="js/script.js"></script>
 </body>
